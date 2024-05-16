@@ -1,0 +1,12 @@
+find()
+    -Gives Multiple Document Thats Why it provide Cursoir
+    -Gives The Cursor Not The Document.
+    -Gives First 20 Documents
+
+findOne()
+    -Gives Single Document.
+
+Projections 
+    Sytanx :- find({},{name:"manav})
+    USED WHEN YOU WANT TO RETRIVE THE DATA BASE ON FIELD 
+    HELPS IN FILTERING
