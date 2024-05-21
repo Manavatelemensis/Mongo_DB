@@ -88,3 +88,62 @@ Second Stage
 
 // Names and age of users who are inactive  aand have velit  as a tag
 
+/*
+
+
+[{
+  $match: {
+		tags:	"velit",
+    isActive: false
+  }
+},{
+  $project: {
+    name:1,
+    age:1
+  }
+}]
+
+*/
+
+
+
+// Latest Registration
+/*
+
+
+[{
+  $sort: {
+    registered: -1
+  }
+},{
+  $limit: 3
+},{
+  $project: {
+    name:1,
+    registered:1,
+    favoriteFruit:1
+  }
+}]
+
+
+
+
+List the number of company based on the location usa
+
+[{
+  $match: {
+    "company.location.country":"USA"
+  }
+},{
+ $group: {
+   _id: "$company.title",
+   countUser:{$sum :1}
+   
+ }
+}]
+
+*/
+
+
+
+
