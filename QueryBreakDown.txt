@@ -1,0 +1,9 @@
+Query Number 1. CreditNote
+
+- Facility with Pending Amount
+- Used $cond 
+  -$cond
+  -Evaluates a boolean expression to return one of the two specified return expressions.
+    -{ $cond: { if: <boolean-expression>, then: <true-case>, else: <false-case> } }
+
+<Decode > Data of Pendig Amount of facility
